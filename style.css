@@ -1,0 +1,155 @@
+@import url(//db.onlinewebfonts.com/c/3fdb879e1f60a0c91e9b4bee114a0928?family=Segoe+WP+Light);
+@font-face {font-family: "Segoe WP Light"; src: url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.eot"); src: url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.woff") format("woff"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3fdb879e1f60a0c91e9b4bee114a0928.svg#Segoe WP Light") format("svg"); }
+body {
+    margin: 0 auto;
+    font-family: "Segoe WP Light";
+}
+
+.header {
+    width: 100%;
+}
+
+.header_container {
+    width: 100%;
+    height: 308px;
+    background: url(assets/1.png);
+    background-size: cover;
+}
+
+.header_container_up {
+    width: 100%;
+    height: 50px;
+    background-color: #9bd7e5;
+    background-size: contain;
+    background: rgba(155, 215, 229, .3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header_main {
+    width: 100%;
+    height: calc(100% - 57px);
+    display: flex;
+    align-items: center;
+}
+
+.header_container_main {
+    margin-left: 200px;
+}
+
+.header_inf {
+    width: 400px;
+    color: white;
+    text-align: center;
+}
+
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  height: 42px;
+}
+.header_search input {
+  height: 42px;
+  width: 0;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .3s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  z-index: 1;
+}
+.header_search input:focus {
+  width: 300px;
+  z-index: 1;
+  border-bottom: 2px solid #F9F0DA;
+}
+.header_search button {
+  background: #41a2c0;
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.header_search button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.header_search ::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.main_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.register_button {
+    background-color: #8FCDDC;
+    border: none;
+    margin-left: 50px;
+    width: 277px;
+    height: 46px;
+    font-size: 30px;
+    color: white;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+ 
+.register_button:hover {
+    background-color: #1c505e;
+    box-shadow:0 0 10px rgb(22, 18, 18); 
+    transition: all 0.3s ease;
+}
+
+.register_button:after{
+    border: 5px solid #0b242b;
+  }
+
+.main_center h1 {
+    color: #8B8B8B;
+    font-size: 30px;
+}
+
+.main_category {
+    display: flex;
+    justify-content: center;
+    color: #636363;
+    font-size: 13px;
+}
+
+.main_catalog{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_catalog li{
+    list-style-type: none;
+}
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #484242;
+    color: #8b8b8b;
+    font-size: 7px;
+}
